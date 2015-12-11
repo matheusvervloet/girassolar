@@ -5,7 +5,6 @@ O Girassolar é um sistema que otimiza a posição de um painel solar, com o obj
 
 Esse projeto foi desenvolvido pelos alunos do curso de Engenharia de Computação da UFSCar, **Matheus Bachetti Vervloet** (495735) e **Eduardo Augusto Marinho** (495808).
 
-Para mais informações, entre na nossa [wiki](https://github.com/matheusvervloet/girassolar/wiki).
 
 ![Foto Real](/Imagens/Foto%20Real.jpg)   
 
