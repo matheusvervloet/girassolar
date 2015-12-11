@@ -6,4 +6,4 @@ Proposta: Montar um sistema que otimiza a posição de um painel solar, com o ob
 Para mais informações, entre na nossa [wiki](https://github.com/matheusvervloet/girassolar/wiki).
 
 # Esquemático
-![Alt text](/esquematico.png?raw=true)
+![Esquemático](/Esquematicos/esquematico.png?raw=true)
