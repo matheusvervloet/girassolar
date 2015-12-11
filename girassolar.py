@@ -66,8 +66,11 @@ def readLight():
 
 # Deixa o sistema em modo standby, liberando o stepper, desligando o display e o rele
 def standby():
-        global relay, lcd, stepper
+        global relay, lcd, stepper, position
         writeData('status.data', 'off')
+        writeData('position.data', position)
+        writeData('light.data', 0)
+        writeData('panel.data', 0)
         relay.off()
         lcd.clear()
         lcd.setColor(0, 0, 0) # Seta o display para cor preta, que equivale a apagar o backlight
