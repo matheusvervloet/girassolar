@@ -49,16 +49,16 @@ def light():
         resp.status_code = 200
         return resp
 
- @app.route('/panel')
- @support_jsonp
- def panel():
-         f = open('panel.data', 'r')
-         panel = int(f.readline())
-         f.close()
-         panelJson = {"panel":panel}
-         resp = jsonify(panelJson)
-         resp.status_code = 200
-         return resp
+@app.route('/panel')
+@support_jsonp
+def panel():
+        f = open('panel.data', 'r')
+        panel = f.readline()
+        f.close()
+        panelJson = {"panel":panel}
+        resp = jsonify(panelJson)
+        resp.status_code = 200
+        return resp
 
 if __name__ == '__main__':
-        app.run(debug=True, host="192.168.1.100", port=80)
+        app.run(debug=False, host="200.18.97.122", port=80)
