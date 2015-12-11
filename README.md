@@ -12,7 +12,7 @@ Esse projeto foi desenvolvido pelos alunos do curso de Engenharia de Computaçã
 [![Vídeo](http://img.youtube.com/vi/nt38LuCRFVc/0.jpg)](http://www.youtube.com/watch?v=nt38LuCRFVc)
 
 #Esquemático
-Esquemático do projeto feito utilizando o site [schematics.com](http://schematics.com).  
+Esquemático do projeto feito utilizando o site [schematics.com](http://schematics.com).  Link para projeto: [Girassolar V3](http://schematics.com/project/girassolar-v3-24773/).  
 Os objetos utilizados foram criados manualmente com as ferramentas do site para representarem o mais próximo possível a realidade.
 
 ![Esquemático](/Esquematicos/esquematico.png)
