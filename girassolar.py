@@ -71,12 +71,8 @@ def standby():
         lcd.clear()
         lcd.setColor(0, 0, 0) # Seta o display para cor preta, que equivale a apagar o backlight
         step(-position)
-        time.sleep(0.5)
         stepper.release()
         writeData('status.data', 'off')
-        writeData('position.data', 0)
-        writeData('light.data', 0)
-        writeData('panel.data', 0)
 
 # Retorna do standby, ligando o display e o rele
 def activate():
