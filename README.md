@@ -7,7 +7,7 @@ Esse projeto foi desenvolvido pelos alunos do curso de Engenharia de Computaçã
 
 Para mais informações, entre na nossa [wiki](https://github.com/matheusvervloet/girassolar/wiki).
 
-![Foto Real](http://i.imgur.com/5pyr0sR.jpg)   
+![Foto Real](/Imagens/Foto%20Real.jpg)   
 
 #Vídeo
 [![Vídeo](http://img.youtube.com/vi/nt38LuCRFVc/0.jpg)](http://www.youtube.com/watch?v=nt38LuCRFVc)
@@ -16,34 +16,34 @@ Para mais informações, entre na nossa [wiki](https://github.com/matheusvervloe
 Esquemático do projeto feito utilizando o site [schematics.com](http://schematics.com).  
 Os objetos utilizados foram criados manualmente com as ferramentas do site para representarem o mais próximo possível a realidade.
 
-![Esquemático](https://raw.githubusercontent.com/matheusvervloet/girassolar/master/Esquematicos/esquematico.png)
+![Esquemático](/Esquematicos/esquematico.png)
 
 #Implementação
 O projeto foi implementado utilizando o [Intel Edison](http://www.intel.com/content/www/us/en/do-it-yourself/edison.html), o [Starter Kit do Grove](http://www.seeedstudio.com/wiki/Grove_-_Starter_Kit_v3), um Stepper Motor(PM55L) e o ULN2003A para interface com o Stepper Motor e uma fonte externa(5V 3A fixo) para alimentação do motor.
 
 #Componentes
 ###LCD
-![LCD](http://www.seeedstudio.com/wiki/images/thumb/0/03/Serial_LEC_RGB_Backlight_Lcd.jpg/400px-Serial_LEC_RGB_Backlight_Lcd.jpg)  
+![LCD](/Imagens/Grove%20LCD.jpg)  
 Utilizamos o LCD do Starter Kit do Grove, para controle utilizamos a biblioteca [pyupm_i2clcd](http://iotdk.intel.com/docs/master/upm/python/pyupm_i2clcd.html).  
 [Exemplo de uso](https://github.com/matheusvervloet/girassolar/blob/master/Exemplos/lcd.py)  
 [Exemplo de uso com sensor de luz](https://github.com/matheusvervloet/girassolar/blob/master/Exemplos/lcd_lightsensor.py)
 
 ###Relay
-![Relay](http://www.seeedstudio.com/wiki/images/thumb/3/34/Twig-Relay.jpg/400px-Twig-Relay.jpg)  
+![Relay](/Imagens/Grove%20Relay.jpg)  
 Utilizamos o relay do Starter Kit do Grove para cortar o fornecimento do painel solar, para controle utilizamos a biblioteca [pyupm_grove](http://iotdk.intel.com/docs/master/upm/python/pyupm_grove.html).  
 [Exemplo de uso](https://github.com/matheusvervloet/girassolar/blob/master/Exemplos/relay.py)
 
 ###Botão
-![Botão](http://www.seeedstudio.com/wiki/images/thumb/9/93/Button1.jpg/400px-Button1.jpg)  
+![Botão](/Imagens/Grove%20Button.jpg)  
 Botão simples do Starter Kit do Grove.
 
 ###Sensor de Luz
-![Sensor de Luz](http://www.seeedstudio.com/wiki/images/thumb/a/a9/Grove_-_Light_Sensor_photo.jpg/400px-Grove_-_Light_Sensor_photo.jpg)   
+![Sensor de Luz](/Imagens/Grove%20Light%20Sensor.jpg)   
 Sensor de luz do Starter Kit do Grove, utilizado para encontrar a direção da fonte de luz mais forte e então apontar o painel solar para ela. Para controle utilizamos a biblioteca [mraa.Aio](http://iotdk.intel.com/docs/master/mraa/python/mraa.html#aio).  
 [Exemplo de uso](https://github.com/matheusvervloet/girassolar/blob/master/Exemplos/lightsensor.py)  
 
 ###Painel Solar
-![Painel](http://i.imgur.com/UZDF0h6.jpg)
+![Painel](/Imagens/Painel%20Solar.jpg)
 Utilizamos em nosso projeto um painel solar de modelo XH-45X80 comprado na [internet](http://produto.mercadolivre.com.br/MLB-719883692-celula-painel-para-energia-solar-fotovoltaica-_JM).
 
 O painel solar tem potência máxima de saída de 0,4W, tensão máxima de funcionamento de 2V e corrente de carga maxima de 200mA, com uma eficiência da célula de 16.5%.
@@ -51,7 +51,7 @@ O painel solar tem potência máxima de saída de 0,4W, tensão máxima de funci
 Para realizar a leitura do painel, o conectamos em um relay para ativar ou desativar a alimentação, e em seguida o conectamos diretamente em uma das entradas analógicas. A entrada analógica lê um sinal de até 5V e a tensão máxima do painel é de 2V.
 
 ###Stepper Motor
-![Motor de passo](http://i.imgur.com/3nmfl5V.jpg)
+![Motor de passo](/Imagens/Stepper%20Motor.jpg)
 Para a movimentação da haste com o painel solar, utilizamos um motor de passo unipolar de modelo PM55L.
 
 Para o controle do motor, usamos um CI ULN2003A, que é um conjunto de transistores darlington que são utilizados para o controle de sistemas de potência. Usamos esses transistores pois o motor pode requerir uma corrente maior do que nossa placa pode suportar. Assim, o motor é conectado à uma fonte de 5V externa, e ativado ou desativado pelos transistores.
@@ -59,10 +59,10 @@ Para o controle do motor, usamos um CI ULN2003A, que é um conjunto de transisto
 A biblioteca 'pyupm_uln200xa' do python já inclui todos os métodos necessários para controlar o motor. Ele é inicializado com um número de passos total, em nosso caso 94, pode ter sua velocidade configurada e dar passos no sentido horário ou anti-horário.
 
 ###ULN2003A
-![ULN2003A](http://i.imgur.com/36mWvAl.jpg)  
+![ULN2003A](Imagens/ULN2003A.jpg)  
 CI para interface com Stepper Motor do Laboratório 1 do Departamento de Computação.  
 #####Pinout
-![Pinout](https://upload.wikimedia.org/wikipedia/commons/b/b0/The_ULN2003_pinout.jpg)  
+![Pinout](/Imagens/ULN2003A%20Pinout.jpg)  
 
 #Interface
 Para acessar os dados do sistema em outras plataformas, utilizamos um servidor web hosteado na Edison com a plataforma [freeboard](http://freeboard.io).
@@ -76,7 +76,7 @@ Para acessar a página, conectamos o Intel Edison à rede local, e acessamos a p
 `http://200.18.97.122/static/index.html#source=gira_dash.json`
 
 Ao acessar a página, podemos consultar os dados do sistema, como mostrado abaixo:
-![Dashboard](http://i.imgur.com/Ng7Znql.png)
+![Dashboard](/Imagens/Freeboard.png)
 
 A página pode ser acessada pelo navegador em um Desktop e também em dispositivos mobile.
 
