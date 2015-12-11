@@ -43,7 +43,7 @@ Sensor de luz do Starter Kit do Grove, utilizado para encontrar a direção da f
 [Exemplo de uso](https://github.com/matheusvervloet/girassolar/blob/master/Exemplos/lightsensor.py)  
 
 ###Painel Solar
-![Painel](/Imagens/Painel%20Solar.jpg)
+![Painel](/Imagens/Painel%20Solar.jpg)  
 Utilizamos em nosso projeto um painel solar de modelo XH-45X80 comprado na [internet](http://produto.mercadolivre.com.br/MLB-719883692-celula-painel-para-energia-solar-fotovoltaica-_JM).
 
 O painel solar tem potência máxima de saída de 0,4W, tensão máxima de funcionamento de 2V e corrente de carga maxima de 200mA, com uma eficiência da célula de 16.5%.
@@ -51,7 +51,7 @@ O painel solar tem potência máxima de saída de 0,4W, tensão máxima de funci
 Para realizar a leitura do painel, o conectamos em um relay para ativar ou desativar a alimentação, e em seguida o conectamos diretamente em uma das entradas analógicas. A entrada analógica lê um sinal de até 5V e a tensão máxima do painel é de 2V.
 
 ###Stepper Motor
-![Motor de passo](/Imagens/Stepper%20Motor.jpg)
+![Motor de passo](/Imagens/Stepper%20Motor.jpg)  
 Para a movimentação da haste com o painel solar, utilizamos um motor de passo unipolar de modelo PM55L.
 
 Para o controle do motor, usamos um CI ULN2003A, que é um conjunto de transistores darlington que são utilizados para o controle de sistemas de potência. Usamos esses transistores pois o motor pode requerir uma corrente maior do que nossa placa pode suportar. Assim, o motor é conectado à uma fonte de 5V externa, e ativado ou desativado pelos transistores.
