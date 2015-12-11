@@ -7,7 +7,10 @@ Esse projeto foi desenvolvido pelos alunos do curso de Engenharia de Computaçã
 
 Para mais informações, entre na nossa [wiki](https://github.com/matheusvervloet/girassolar/wiki).
 
-![Foto Real](http://i.imgur.com/5pyr0sR.jpg)
+![Foto Real](http://i.imgur.com/5pyr0sR.jpg)   
+
+#Vídeo
+[![Vídeo](http://img.youtube.com/vi/nt38LuCRFVc/0.jpg)](http://www.youtube.com/watch?v=nt38LuCRFVc)
 
 #Esquemático
 Esquemático do projeto feito utilizando o site [schematics.com](http://schematics.com).  
