@@ -58,7 +58,6 @@ A biblioteca 'pyupm_uln200xa' do python já inclui todos os métodos necessário
 ###ULN2003A
 ![ULN2003A](http://i.imgur.com/36mWvAl.jpg)  
 CI para interface com Stepper Motor do Laboratório 1 do Departamento de Computação.  
-Mais informações [Stepper Motor](https://github.com/matheusvervloet/girassolar/wiki/Stepper-Motor).  
 #####Pinout
 ![Pinout](https://upload.wikimedia.org/wikipedia/commons/b/b0/The_ULN2003_pinout.jpg)  
 
