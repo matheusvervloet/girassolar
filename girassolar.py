@@ -67,22 +67,23 @@ def readLight():
 # Deixa o sistema em modo standby, liberando o stepper, desligando o display e o rele
 def standby():
         global relay, lcd, stepper, position
-        writeData('status.data', 'off')
-        writeData('position.data', position)
-        writeData('light.data', 0)
-        writeData('panel.data', 0)
         relay.off()
         lcd.clear()
         lcd.setColor(0, 0, 0) # Seta o display para cor preta, que equivale a apagar o backlight
         step(-position)
+        time.sleep(0.5)
         stepper.release()
+        writeData('status.data', 'off')
+        writeData('position.data', 0)
+        writeData('light.data', 0)
+        writeData('panel.data', 0)
 
 # Retorna do standby, ligando o display e o rele
 def activate():
         global relay, lcd
-        writeData('status.data', 'on')
         relay.on()
         lcd.setColor(255, 255, 255)
+        writeData('status.data', 'on')
 
 # Interrupcao usada pelo botao que coloca o sistema em standby
 def buttonISR(arg):
