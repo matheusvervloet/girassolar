@@ -3,7 +3,7 @@ Sistema de otimização do posicionamento de painéis solares, projeto final da 
 
 O Girassolar é um sistema que otimiza a posição de um painel solar, com o objetivo de maximizar a eficiência energética do painel. O projeto utiliza um motor de passo para controlar a posição do painel, um relé para ativar ou desativar o output do painel, um sensor de luz para identificar a posição do sol, um display LCD para exibir informações do sistema e um botão para desativar o sistema. Além disso, utilizamos um servidor web hosteado no edison para exibir as informações do sistema utilizando a plataforma [freeboard](http://www.freeboard.io).
 
-Esse projeto foi desenvolvido pelos alunos do curso de Engenharia de Computação da UFSCar, Matheus Bachetti Vervloet (495735) e Eduardo Augusto Marinho (495808).
+Esse projeto foi desenvolvido pelos alunos do curso de Engenharia de Computação da UFSCar, **Matheus Bachetti Vervloet** (495735) e **Eduardo Augusto Marinho** (495808).
 
 Para mais informações, entre na nossa [wiki](https://github.com/matheusvervloet/girassolar/wiki).
 
