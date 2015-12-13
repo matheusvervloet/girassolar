@@ -18,7 +18,7 @@ Os objetos utilizados foram criados manualmente com as ferramentas do site para 
 ![Esquemático](/Esquematicos/esquematico.png)
 
 #Implementação
-O projeto foi implementado utilizando o [Intel Edison](http://www.intel.com/content/www/us/en/do-it-yourself/edison.html), o [Starter Kit do Grove](http://www.seeedstudio.com/wiki/Grove_-_Starter_Kit_v3), um Stepper Motor(PM55L) e o ULN2003A para interface com o Stepper Motor e uma fonte externa(5V 3A fixo) para alimentação do motor.
+O projeto foi implementado utilizando o [Intel Edison](http://www.intel.com/content/www/us/en/do-it-yourself/edison.html), o [Starter Kit do Grove](http://www.seeedstudio.com/wiki/Grove_-_Starter_Kit_v3), um Stepper Motor(PM55L) e o ULN2003A para interface com o Stepper Motor e uma fonte externa(5V 3A fixo) para alimentação do motor. Para o código, decidmos por utilizar [Python](https://www.python.org/) rodando no [Yocto Linux](https://www.yoctoproject.org/releases-yocto-version/yocto-project-11-edison), e algumas bibliotecas do python para acessar o hardware do Edison, entre elas a mraa (baixo nível), a upm (alto nível) e por fim o [Flask](http://flask.pocoo.org/) para a webpage do painel de status do projeto.
 
 #Componentes
 ###LCD
@@ -64,7 +64,7 @@ CI para interface com Stepper Motor do Laboratório 1 do Departamento de Computa
 ![Pinout](/Imagens/ULN2003A%20Pinout.jpg)  
 
 #Interface
-Para acessar os dados do sistema em outras plataformas, utilizamos um servidor web hosteado na Edison com a plataforma [freeboard](http://freeboard.io).
+Para acessar os dados do sistema em outras plataformas, utilizamos um servidor web em [Flask](http://flask.pocoo.org/) hosteado na Edison com a plataforma [freeboard](http://freeboard.io).
 
 A plataforma freeboard nos permite monitorar sistemas IoT em tempo real, utilizando diversos métodos de captura de dados. Em nosso sistema, o servidor e programa controlador são executados em paralelo. O programa controlador (girassolar.py) grava as informações atuais em arquivos de texto, que são então lidos pelo servidor (webserver.py) e exibidos na página.
 
