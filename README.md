@@ -19,6 +19,7 @@ Os objetos utilizados foram criados manualmente com as ferramentas do site para 
 
 #Implementação
 O projeto foi implementado utilizando o [Intel Edison](http://www.intel.com/content/www/us/en/do-it-yourself/edison.html), o [Starter Kit do Grove](http://www.seeedstudio.com/wiki/Grove_-_Starter_Kit_v3), um Stepper Motor(PM55L) e o ULN2003A para interface com o Stepper Motor e uma fonte externa(5V 3A fixo) para alimentação do motor. Para o código, decidmos por utilizar [Python](https://www.python.org/) rodando no [Yocto Linux](https://www.yoctoproject.org/releases-yocto-version/yocto-project-11-edison), e algumas bibliotecas do python para acessar o hardware do Edison, entre elas a mraa (baixo nível), a upm (alto nível) e por fim o [Flask](http://flask.pocoo.org/) para a webpage do painel de status do projeto.
+O controle do posicionamento é simples, realizado pela leitura do sensor de luz e o acionamento do motor de passo. O sistema realiza três leituras: uma na posição atual, uma 3 passos à frente da atual e uma ultima 3 passos atrás. Após as leituras, compara a intensidade de luz atual com a leitura dos passos à frente e atrás, e assim determina em que direção deve mover o braço do painel solar, sendo essa a direção em que tivermos maior intensidade de luz. Caso a posição atual já possua a maior intensidade, o braço permanece onde estava e espera até que alguma mudança na leitura indique que tenhamos que determinar uma nova movimentação.
 
 #Componentes
 ###LCD
